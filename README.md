@@ -13,23 +13,25 @@ Method 2 seems to be better on larger lists. Although the performance improvemen
 
 ## Results
 ```
- Time taken to execute method_1  10 times is 1.763099862728268e-05
- Time taken to execute method_2  10 times is 4.247001925250515e-06
+Starting experiments
+ Time taken to execute method_1  for list size 10 time taken 1.5382000128738582e-05
+ Time taken to execute method_2  for list size 10 times taken 4.479999915929511e-06
 ---------------------------------------------------------------------------------
- Time taken to execute method_1  100 times is 5.059999239165336e-06
- Time taken to execute method_2  100 times is 3.6860001273453236e-06
+ Time taken to execute method_1  for list size 100 times taken 4.80900052934885e-06
+ Time taken to execute method_2  for list size 100 times taken 3.887998900609091e-06
 ---------------------------------------------------------------------------------
- Time taken to execute method_1  1000 times is 8.00400084699504e-06
- Time taken to execute method_2  1000 times is 5.771998985437676e-06
+ Time taken to execute method_1  for list size 1000 times taken 9.991999831981957e-06
+ Time taken to execute method_2  for list size 1000 times taken 2.1895000827498734e-05
 ---------------------------------------------------------------------------------
- Time taken to execute method_1  10000 times is 4.0186998376157135e-05
- Time taken to execute method_2  10000 times is 7.999002264114097e-06
+ Time taken to execute method_1  for list size 10000 times taken 7.123999239411205e-06
+ Time taken to execute method_2  for list size 10000 times taken 4.231002094456926e-06
 ---------------------------------------------------------------------------------
- Time taken to execute method_1  100000 times is 1.0104999091709033e-05
- Time taken to execute method_2  100000 times is 5.53599966224283e-06
+ Time taken to execute method_1  for list size 100000 times taken 7.0690002758055925e-06
+ Time taken to execute method_2  for list size 100000 times taken 4.2050014599226415e-06
 ---------------------------------------------------------------------------------
- Time taken to execute method_1  1000000 times is 9.362000128021464e-06
- Time taken to execute method_2  1000000 times is 5.178000719752163e-06
+ Time taken to execute method_1  for list size 1000000 times taken 7.31000181986019e-06
+ Time taken to execute method_2  for list size 1000000 times taken 4.158999217906967e-06
 ---------------------------------------------------------------------------------
+
 ```
 
