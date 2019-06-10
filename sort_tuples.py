@@ -78,6 +78,10 @@ def method_2():
 
     while True:
         iteration +=1
+
+        if len(input)==1:
+            return input
+
         cur_input = input[pointer]
         next_input = input[pointer+1]
 
@@ -113,22 +117,22 @@ def method_2():
 divider = "---------------------------------------------------------------------------------"
 print("Starting experiments")
 input = sort_tuples(gen_input(10))
-print(" Time taken to execute method_1  for list size {} time taken {}".format(10, timeit.timeit(stmt=method_1,number= 5)))
-print(" Time taken to execute method_2  for list size {} times taken {}".format(10, timeit.timeit(stmt=method_2,number= 5)))
+print(" Time taken to execute method_1  for list size {} time taken {}".format(10, format(timeit.timeit(stmt=method_1,number= 5),'f')))
+print(" Time taken to execute method_2  for list size {} times taken {}".format(10, format(timeit.timeit(stmt=method_2,number= 5),'f')))
 print(divider)
 input = sort_tuples(gen_input(100))
-print(" Time taken to execute method_1  for list size {} times taken {}".format(100, timeit.timeit(stmt=method_1,number= 5)))
-print(" Time taken to execute method_2  for list size {} times taken {}".format(100, timeit.timeit(stmt=method_2,number= 5)))
+print(" Time taken to execute method_1  for list size {} times taken {}".format(100, format(timeit.timeit(stmt=method_1,number= 5),'f')))
+print(" Time taken to execute method_2  for list size {} times taken {}".format(100, format(timeit.timeit(stmt=method_2,number= 5),'f')))
 print(divider)
 input = sort_tuples(gen_input(1000))
-print(" Time taken to execute method_1  for list size {} times taken {}".format(1000, timeit.timeit(stmt=method_1,number= 5)))
-print(" Time taken to execute method_2  for list size {} times taken {}".format(1000, timeit.timeit(stmt=method_2,number= 5)))
+print(" Time taken to execute method_1  for list size {} times taken {}".format(1000, format(timeit.timeit(stmt=method_1,number= 5),'f')))
+print(" Time taken to execute method_2  for list size {} times taken {}".format(1000, format(timeit.timeit(stmt=method_2,number= 5),'f')))
 print(divider)
 input = sort_tuples(gen_input(10000))
-print(" Time taken to execute method_1  for list size {} times taken {}".format(10000, timeit.timeit(stmt=method_1,number= 5)))
-print(" Time taken to execute method_2  for list size {} times taken {}".format(10000, timeit.timeit(stmt=method_2,number= 5)))
+print(" Time taken to execute method_1  for list size {} times taken {}".format(10000, format(timeit.timeit(stmt=method_1,number= 5),'f')))
+print(" Time taken to execute method_2  for list size {} times taken {}".format(10000, format(timeit.timeit(stmt=method_2,number= 5),'f')))
 print(divider)
 input = sort_tuples(gen_input(100000))
-print(" Time taken to execute method_1  for list size {} times taken {}".format(100000, timeit.timeit(stmt=method_1,number= 5)))
-print(" Time taken to execute method_2  for list size {} times taken {}".format(100000, timeit.timeit(stmt=method_2,number= 5)))
+print(" Time taken to execute method_1  for list size {} times taken {}".format(100000, format(timeit.timeit(stmt=method_1,number= 5),'f')))
+print(" Time taken to execute method_2  for list size {} times taken {}".format(100000, format(timeit.timeit(stmt=method_2,number= 5),'f')))
 print(divider)
